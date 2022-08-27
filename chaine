@@ -1,0 +1,35 @@
+ALGORITHM calcul-chaine
+VAR
+
+chaine:STRING:= "Hello Evreyone please take a sit.";
+i:INTEGER:=0;
+j:INTEGER:=0;
+k:INTEGER:=0;
+BEGIN
+
+
+REPEAT
+Read(chaine[i])
+
+
+IF (chaine[i]=" ") THEN
+   j:= j+1;
+
+ELSE IF (chaine[i]="a" or chaine[i]="e" or chaine[i]="i" chaine[i]="o" or chaine[i]="u" or chaine[i]="y")
+k:=k+1;
+
+END_IF
+
+
+i:=i+1;
+
+UNTIL(chaine[i]:='.')
+
+Write('longueur chaine=')
+Write(i)
+Write('nombre espaces=')
+Write(j)
+Write('nombre voyelles=')
+Write(k)
+
+END
